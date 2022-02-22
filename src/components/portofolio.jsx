@@ -1,9 +1,25 @@
 import React from "react";
 
 const Portfolio = () => {
-  const state = [{ Netfle: { src: "" } }, { Google: { src: "./logo192" } }];
+  const state = [
+    {
+      name: "Netflix",
+      src: "./logo192.png",
+      explain: ` Some quick example text to build on the card title and make upthe bulk of the card's content.`,
+    },
+    {
+      name: "Google",
+      src: "./logo192.png",
+      explain: ` Some quick example text to build on the card title and make upthe bulk of the card's content.`,
+    },
+    {
+      name: "Amazon",
+      src: "./logo192.png",
+      explain: ` Some quick example text to build on the card title and make upthe bulk of the card's content.`,
+    },
+  ];
 
-  console.log(state);
+  //   console.log(Object.keys);
   return (
     <section className="container completePage">
       <div className="my-5 text-center">
@@ -19,20 +35,22 @@ const Portfolio = () => {
           <li className="list-group-item">desktop</li>
           <li className="list-group-item">mobile</li>
         </ul>
-
-        <article className="card m-2">
-          <img src="./logo192.png" className="card-img-top" alt="..."></img>
-          <div className="card-body">
-            <h5 className="card-title">Netflix</h5>
-            <p className="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <a href="#" className="btn btn-primary">
-              Open website
-            </a>
+        <div className="juctify-content-center">
+          <div className="my-5 text-center row">
+            {state.map((e) => (
+              <article key={e.name} className="col-3 card m-4">
+                <img src={e.src} className="card-img-top" alt={e.name}></img>
+                <div className="card-body">
+                  <h5 className="card-title">{e.name}</h5>
+                  <p className="card-text">{e.explain}</p>
+                  <a href="#" className="btn btn-primary">
+                    Open website
+                  </a>
+                </div>
+              </article>
+            ))}
           </div>
-        </article>
+        </div>
       </div>
     </section>
   );
