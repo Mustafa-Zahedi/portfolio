@@ -1,13 +1,15 @@
 import "./App.css";
 import Index from "./components";
 import Abilities from "./components/Abilities";
+import Portfolio from "./components/portofolio";
 
 function App() {
   return (
-    <div className="App container">
+    <main className="App container">
       <Index />
       <Abilities />
-    </div>
+      <Portfolio />
+    </main>
   );
 }
 

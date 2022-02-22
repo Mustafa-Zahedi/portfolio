@@ -11,6 +11,15 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-.index {
+.completePage {
   height: 100vh;
+}
+
+.listBckrnd {
+  background-image: url("/public/VGwHMtohTA.png");
+  /* background-size: 1150px 695px; */
+  background-size: cover;
+}
+.card {
+  width: 18rem;
 }
