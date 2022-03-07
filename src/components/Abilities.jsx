@@ -3,7 +3,7 @@ import { Icon } from "@iconify/react";
 
 const Abilities = () => {
   return (
-    <section className="container">
+    <section className="container my-5 py-5">
       <div className="listBckrnd completePage d-flex align-items-center p-5 row">
         <div className="col-5">
           <h2 className="display-4 mb-3 text-start">What I do best</h2>
@@ -15,12 +15,6 @@ const Abilities = () => {
                 width="50"
                 height="50"
               />
-              {/* <Icon
-              icon="emojione-v1:empty-note-page"
-              width="70"
-              height="60"
-              color="blue"
-            /> */}
             </div>
             <div className="col">
               <h5>Creative pages</h5>

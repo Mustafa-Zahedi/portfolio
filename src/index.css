@@ -12,7 +12,8 @@ code {
     monospace;
 }
 .completePage {
-  height: 100vh;
+  position: relative;
+  margin: 10px;
 }
 
 .listBckrnd {

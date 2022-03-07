@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Portfolio = () => {
-  const state = [
+  const [projects] = useState([
     {
       name: "Netflix",
       src: "./logo192.png",
@@ -17,9 +17,9 @@ const Portfolio = () => {
       src: "./logo192.png",
       explain: ` Some quick example text to build on the card title and make upthe bulk of the card's content.`,
     },
-  ];
+  ]);
 
-  //   console.log(Object.keys);
+  console.log(projects);
   return (
     <section className="container completePage">
       <div className="my-5 text-center">
@@ -37,13 +37,13 @@ const Portfolio = () => {
         </ul>
         <div className="juctify-content-center">
           <div className="my-5 text-center row">
-            {state.map((e) => (
+            {projects.map((e) => (
               <article key={e.name} className="col-3 card m-4">
                 <img src={e.src} className="card-img-top" alt={e.name}></img>
                 <div className="card-body">
                   <h5 className="card-title">{e.name}</h5>
                   <p className="card-text">{e.explain}</p>
-                  <a href="#" className="btn btn-primary">
+                  <a href="#" className="btn btn-info">
                     Open website
                   </a>
                 </div>
@@ -52,6 +52,7 @@ const Portfolio = () => {
           </div>
         </div>
       </div>
+      <button className="btn btn-info"> load more</button>
     </section>
   );
 };
