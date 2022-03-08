@@ -3,7 +3,7 @@ import { Icon } from "@iconify/react";
 
 const Abilities = () => {
   return (
-    <section className="listBckrnd my-5 py-5">
+    <section className="listBckrnd my-5 py-5 min-vh-100">
       <div className="container">
         <div className="d-flex align-items-center p-5 row">
           <div className="col-lg-5 col-md-9 col-sm-12">

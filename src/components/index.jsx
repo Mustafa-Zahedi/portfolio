@@ -3,7 +3,7 @@ import { Icon } from "@iconify/react";
 
 const Index = () => {
   return (
-    <section className="container my-5 py-5">
+    <section className="container my-5 py-5 min-vh-100">
       <div className="completePage d-flex align-items-center row">
         <div className="justify-content-center col-lg-5 col-md-12 mb-5">
           <h1>Hey, I'm Mostapha</h1>
