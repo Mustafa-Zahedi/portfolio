@@ -1,25 +1,51 @@
 import React, { useState } from "react";
+import { Icon } from "@iconify/react";
 
 function Quote(props) {
   const [quotes, setQuotes] = useState([
     " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe provident fugit blanditiis eveniet expedita enim rerum quos cumque necessitatibus minus.",
+    "amet consectetur adipisicing elit. Saepe provident fugit blanditiis eveniet expedita enim rerum quos cumque necessitatibus minus.amet consectetur adipisicing elit. Senim rerum quos cumque necessitatibus minus.amet consectetur adipisicing elit. Senim rerum quos cumque necessitatibus minus.amet consectetur adipisicing elit. Saepe provident fugit blanditiis eveniet expedita enim rerum quos cumque necessitatibus minus.",
+    "amet consectetur adipisicing elit. Saepe provident fugit blanditiis eveniet expedita enim rerum quos cumque necessitatibus minus.amet consectetur adipisicing elit. Saepe provident fugit blanditiis eveniet expedita enim rerum quos cumque necessitatibus minus.",
   ]);
-
+  const handleClick = (e) => {
+    console.log(quotes.length);
+    if (e === "next") {
+      let temp = [...quotes];
+      let t = temp[0];
+      temp[0] = temp[1];
+      temp[1] = t;
+      setQuotes(temp);
+    } else {
+      let temp = [...quotes];
+      let t = temp[0];
+      temp[0] = temp[1];
+      temp[1] = t;
+      setQuotes(temp);
+    }
+  };
   return (
     <section className="quote">
-      <div className="container">
+      <div className="container py-4">
         <div className="row my-5 pt-5 justify-content-center">
-          <div className="col-md-6 col-sm-12 mb-sm-3 m-3">
-            <div className="row mx-lg-5 mx-md-1 ">
-              <div className="carousel-inner"></div>
-              {quotes[0]}
-            </div>
-            <div className="mt-5 ">
-              <button className="btn btn-outline-info m-1">pre</button>
-              <button className="btn btn-outline-info m-1">next</button>
+          <div className="row col-md-6 col-sm-12 py-1">
+            <div className="col-12 p-lg-4 text-muted">{quotes[0]}</div>
+            <div className="col-12 align-self-end">
+              <div className="text-right">
+                <a
+                  className="btn btn-outline-info me-1 rounded-pill "
+                  onClick={() => handleClick("prev")}
+                >
+                  <Icon icon="ooui:arrow-previous-ltr" />
+                </a>
+                <a
+                  className="btn btn-outline-info rounded-pill"
+                  onClick={() => handleClick("next")}
+                >
+                  <Icon icon="ooui:arrow-next-ltr" />
+                </a>
+              </div>
             </div>
           </div>
-
           <div className="col-md-5 col-sm-10">
             <div>
               <img
