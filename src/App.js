@@ -7,7 +7,7 @@ import Quote from "./components/quote";
 
 function App() {
   return (
-    <main className="App container">
+    <main className="App">
       <Helmet>
         <title>Mostapha</title>
       </Helmet>

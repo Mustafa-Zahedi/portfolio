@@ -1,71 +1,33 @@
-import React from "react";
+import React, { useState } from "react";
 
 function Quote(props) {
+  const [quotes, setQuotes] = useState([
+    " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe provident fugit blanditiis eveniet expedita enim rerum quos cumque necessitatibus minus.",
+  ]);
+
   return (
-    <section className="container completePage">
-      <div className="row my-5 py-3">
-        <div className="col-6">
-          <div
-            id="carouselExampleControls"
-            className="carousel slide"
-            data-bs-ride="carousel"
-          >
-            <div className="carousel-inner">
-              <div className="carousel-item active">
-                <img
-                  src="./developer.jpg"
-                  className="d-block w-100"
-                  alt="..."
-                />
-              </div>
-              <div className="carousel-item">
-                <img
-                  src="./developer.jpg"
-                  className="d-block w-100"
-                  alt="..."
-                />
-              </div>
-              <div className="carousel-item">
-                <img
-                  src="./developer.jpg"
-                  className="d-block w-100"
-                  alt="..."
-                />
-              </div>
+    <section className="quote">
+      <div className="container">
+        <div className="row my-5 pt-5 justify-content-center">
+          <div className="col-md-6 col-sm-12 mb-sm-3 m-3">
+            <div className="row mx-lg-5 mx-md-1 ">
+              <div className="carousel-inner"></div>
+              {quotes[0]}
             </div>
-            <button
-              className="carousel-control-prev"
-              type="button"
-              data-bs-target="#carouselExampleControls"
-              data-bs-slide="prev"
-            >
-              <span
-                className="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span className="visually-hidden">Previous</span>
-            </button>
-            <button
-              className="carousel-control-next"
-              type="button"
-              data-bs-target="#carouselExampleControls"
-              data-bs-slide="next"
-            >
-              <span
-                className="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span className="visually-hidden">Next</span>
-            </button>
+            <div className="mt-5 ">
+              <button className="btn btn-outline-info m-1">pre</button>
+              <button className="btn btn-outline-info m-1">next</button>
+            </div>
           </div>
-        </div>
-        <div className="col-4">
-          <div>
-            <img
-              className="img-fluid rounded"
-              src="./be-a-Programmer.jpg"
-              alt=""
-            />
+
+          <div className="col-md-5 col-sm-10">
+            <div>
+              <img
+                className="img-fluid rounded"
+                src="./be-a-Programmer.jpg"
+                alt=""
+              />
+            </div>
           </div>
         </div>
       </div>

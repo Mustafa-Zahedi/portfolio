@@ -18,10 +18,43 @@ code {
 
 .listBckrnd {
   background-image: url("/public/VGwHMtohTA.png");
-  /* background-size: 1150px 695px; */
   background-size: cover;
 }
 .card {
   width: 18rem;
   border-radius: 10px !important;
+}
+
+.quote {
+  background-color: #6e6c6c18;
+}
+.btnS {
+  position: relative;
+  border: none;
+  transition: 0.4s ease-in;
+  z-index: 1;
+}
+.btnS::before,
+.btnS::after {
+  position: absolute;
+  content: "";
+  z-index: -1;
+}
+
+.btnS1:hover {
+  box-shadow: 10px 10px 0px rgb(52, 39, 230);
+  top: 5px;
+  left: -5px;
+}
+
+.btnS2:hover {
+  box-shadow: inset -10.5em 0 0 0 #ff96ad, inset 10.5em 0 0 0 #e63d3dc7;
+}
+.btnS2:hover::after {
+  width: 10%;
+}
+
+.btnS3:hover {
+  background: #0eb5df;
+  box-shadow: 0 0 5px #0eb5df, 0 0 25px #0eb5df, 0 0 50px #0eb5df;
 }
