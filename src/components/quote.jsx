@@ -24,11 +24,11 @@ function Quote(props) {
     }
   };
   return (
-    <section className="quote min-vh-100">
+    <section className="quote min-vh-70">
       <div className="container-lg container-fluid-md py-4">
         <div className="row my-5 pt-5 justify-content-center">
           <div className="row col-md-6 col-sm-12 my-3 py-1">
-            <div className="col-12 p-lg-4 p-md-1 text-muted quoteHeight">
+            <div className="col-12 p-lg-4 p-md-1 text-muted quoteHeight fs-4">
               {quotes[0]}
             </div>
             <div className="col-12 align-self-end">

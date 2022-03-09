@@ -3,10 +3,11 @@ import { Icon } from "@iconify/react";
 
 const Abilities = () => {
   return (
-    <section className="listBckrnd my-5 py-5 min-vh-100">
+    <section className=" mb-5 py-5 min-vh-100">
+      <div className=" "></div>
       <div className="container">
-        <div className="d-flex align-items-center p-5 row">
-          <div className="col-lg-5 col-md-9 col-sm-12">
+        <div className="d-flex align-items-center p-5 pe-0 row">
+          <div className="col-lg-5 col-md-9 col-sm-12 py-sm-5">
             <h2 className="display-4 mb-3 text-start">What I do best</h2>
             <div className="text-start row">
               <div className="col-2 m-md-0 me-3">
@@ -61,6 +62,13 @@ const Abilities = () => {
                 </p>
               </div>
             </div>
+          </div>
+          <div className="col-lg-7 col-md-12">
+            <img
+              src="./large_2773_VA87MRainbowTKL_2.jpg"
+              alt="keyboard"
+              className="img-fluid"
+            />
           </div>
         </div>
       </div>

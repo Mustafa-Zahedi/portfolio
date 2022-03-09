@@ -4,6 +4,7 @@ import Index from "./components";
 import Abilities from "./components/Abilities";
 import Portfolio from "./components/portofolio";
 import Quote from "./components/quote";
+import Footer from "./components/footer";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Abilities />
       <Portfolio />
       <Quote />
+      <Footer />
     </main>
   );
 }
