@@ -2,6 +2,11 @@ import React from "react";
 import { Icon } from "@iconify/react";
 
 const Index = () => {
+  const goToPortfolio = () => {
+    const portfolio = document.querySelector(".portfolio");
+    portfolio.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <section className="container my-5 py-5 min-vh-100">
       <div className="completePage d-flex align-items-center row">
@@ -11,7 +16,9 @@ const Index = () => {
           <button className="btn btn-outline-info mt-5 mx-3">
             <Icon icon="akar-icons:cloud-download" /> Download CV
           </button>
-          <button className="btn btn-outline-info mt-5">portfolio</button>
+          <button className="btn btn-outline-info mt-5" onClick={goToPortfolio}>
+            portfolio
+          </button>
         </div>
         <div className="col-lg-6 col-md-12">
           <img

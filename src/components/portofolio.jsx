@@ -21,7 +21,7 @@ const Portfolio = () => {
 
   console.log(projects);
   return (
-    <section className="container-fluid-lg container-fluid-md container-fluid-sm completePage">
+    <section className="container-fluid-lg container-fluid-md container-fluid-sm completePage portfolio">
       <div className="my-5 text-center">
         <div>
           <h1>My portfolio</h1>
