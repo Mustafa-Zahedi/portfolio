@@ -1,4 +1,5 @@
 import React from "react";
+import { Icon } from "@iconify/react";
 
 function Footer() {
   return (
@@ -10,19 +11,19 @@ function Footer() {
           <a
             href="https://github.com/Mustafa-Zahedi/"
             target="_blank"
-            className="btn btn-secondary m-2"
+            className="m-2"
           >
-            Github
+            <Icon icon="fa-brands:github-square" color="gray" height="40px" />
           </a>
           <a
             href="https://www.linkedin.com/in/mustafa-zahedi-17870020b/"
             target="_blank"
-            className="btn btn-primary m-2"
+            className="m-2"
           >
-            Linkdin
+            <Icon icon="logos:linkedin-icon" height="40px" />
           </a>
         </div>
-        <div className="my-3 pb-4">
+        <div className="my-3 pb-2">
           <span>© All right reserved. made by Zahedi</span>
         </div>
       </div>

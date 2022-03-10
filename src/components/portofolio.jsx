@@ -5,17 +5,17 @@ const Portfolio = () => {
     {
       name: "Netflix",
       src: "./logo192.png",
-      explain: ` Some quick example text to build on the card title and make upthe bulk of the card's content.`,
+      explain: ` Some quick example text to build on the card title `,
     },
     {
       name: "Google",
       src: "./logo192.png",
-      explain: ` Some quick example text to build on the card title and make upthe bulk of the card's content.`,
+      explain: ` Some quick example text to build on the card title `,
     },
     {
       name: "Amazon",
       src: "./logo192.png",
-      explain: ` Some quick example text to build on the card title and make upthe bulk of the card's content.`,
+      explain: ` Some quick example text to build on the card title `,
     },
   ]);
 
@@ -29,12 +29,35 @@ const Portfolio = () => {
             Most recent projects I have completed
           </p>
         </div>
-        <ul className="list-group list-group-horizontal justify-content-center">
-          <a className="btn list-group-item active">All</a>
-          <a className="btn list-group-item">Web Pages</a>
-          <a className="btn list-group-item">Desktop Apps</a>
-          <a className="btn list-group-item">Andriod Apps</a>
-        </ul>
+        <div className="row justify-content-center">
+          <ul class="nav nav-pills nav-fill col-lg-6">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">
+                All
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                Web pages
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                Desktop app
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link disabled"
+                href="#"
+                tabindex="-1"
+                aria-disabled="true"
+              >
+                Moblie app
+              </a>
+            </li>
+          </ul>
+        </div>
         <div className="my-5">
           <div className="row justify-content-center mx-sm-0 mx-2">
             {projects.map((e) => (
