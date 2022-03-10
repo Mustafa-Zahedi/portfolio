@@ -4,7 +4,7 @@ import { Icon } from "@iconify/react";
 function Quote(props) {
   const [quotes, setQuotes] = useState([
     " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe provident fugit blanditiis eveniet expedita enim rerum quos cumque necessitatibus minus.",
-    "amet consectetur adipisicing elit. Saepe provident fugit blanditiis eveniet expedita enim rerum quos cumque necessitatibus minus.amet consectetur adipisicing elit. Senim rerum quos cumque necessitatibus minus.amet consectetur adipisicing elit",
+    "amet consectetur adipisicing elit. Saepe provident fugit blanditiis eveniet expedita enim rerum quos cumque necessitatibus minus.amet consectetur adipisicing rerum quos necessitatibus minus.amet consectetur adipisicing elit",
     "amet consectetur adipisicing elit. Saepe provident fugit blanditiis eveniet expedita enim rerum quos cumque necessitatibus minus.amet consectetur adipisicing elit. Saepe provident fugit blanditiis eveniet expedita enim rerum quos cumque necessitatibus minus.",
   ]);
   const handleClick = (e) => {

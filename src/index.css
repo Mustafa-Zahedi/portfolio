@@ -59,33 +59,55 @@ code {
   box-shadow: 0 0 5px #0eb5df, 0 0 25px #0eb5df, 0 0 50px #0eb5df;
 }
 .quoteHeight {
-  height: 240px;
+  height: 245px;
 }
-.alignCenter {
-  align-items: center;
-}
-.frontFooter {
-  /* this is needed or the background will be offset by a few pixels at the top */
+
+.abilitiesFront {
   overflow: auto;
   position: relative;
 }
-
-.frontFooter::before {
+.abilitiesFront::before {
   content: "";
-  position: fixed;
-  left: 0;
+  position: absolute;
+  left: 35%;
   right: 0;
   z-index: -1;
 
   display: block;
-  background-image: url("../public/5930.jpg");
-  background-size: cover;
-  width: 100%;
-  height: 100%;
+  background-image: url("../public/large_2773_VA87MRainbowTKL_2.jpg");
+  background-size: contain;
+  width: 65%;
+  height: 80%;
 
   -webkit-filter: blur(5px);
   -moz-filter: blur(5px);
   -o-filter: blur(5px);
   -ms-filter: blur(5px);
-  filter: blur(5px);
+  filter: blur(3px);
+}
+.frontFooter {
+  overflow: auto;
+  position: relative;
+}
+
+.frontFooter::before {
+  margin-top: 30px;
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: -1;
+
+  border-radius: 80px;
+  display: block;
+  background-image: url("../public/Remote-Support-Solutions.jpg");
+  background-size: auto;
+  width: 100%;
+  height: 80%;
+
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(8px);
 }

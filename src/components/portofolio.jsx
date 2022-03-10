@@ -22,7 +22,7 @@ const Portfolio = () => {
   console.log(projects);
   return (
     <section className="container-fluid-lg container-fluid-md container-fluid-sm completePage portfolio my-5">
-      <div className="my-5 text-center">
+      <div className="my-5 px-2 text-center">
         <div>
           <h1>My portfolio</h1>
           <p className="my-4 text-secondary">

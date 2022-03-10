@@ -8,7 +8,7 @@ const Index = () => {
   };
 
   return (
-    <section className="container mt-5 pt-5 vh-100 alignCenter">
+    <section className="container mt-5 pt-5 min-vh-100">
       <div>
         <div className="d-flex align-items-center row">
           <div className="justify-content-center col-lg-5 col-md-12 mb-5">
