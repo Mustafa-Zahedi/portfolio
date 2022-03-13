@@ -1,28 +1,32 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const Portfolio = () => {
-  const [projects] = useState([
-    {
-      name: "Netflix",
-      src: "./logo192.png",
-      explain: ` Some quick example text to build on the card title `,
-    },
-    {
-      name: "Google",
-      src: "./logo192.png",
-      explain: ` Some quick example text to build on the card title `,
-    },
-    {
-      name: "Amazon",
-      src: "./logo192.png",
-      explain: ` Some quick example text to build on the card title `,
-    },
-  ]);
+  const [projects, setProjects] = useState([]);
+
+  useEffect(() => {
+    setProjects([
+      {
+        name: "Netflix",
+        src: "./logo192.png",
+        explain: ` Some quick example text to build on the card title `,
+      },
+      {
+        name: "Google",
+        src: "./logo192.png",
+        explain: ` Some quick example text to build on the card title `,
+      },
+      {
+        name: "Amazon",
+        src: "./logo192.png",
+        explain: ` Some quick example text to build on the card title `,
+      },
+    ]);
+  }, []);
 
   console.log(projects);
   return (
     <section className="container-fluid-lg container-fluid-md container-fluid-sm completePage portfolio my-5">
-      <div className="my-5 px-2 text-center">
+      <div className="my-5 px-3 text-center">
         <div>
           <h1>My portfolio</h1>
           <p className="my-4 text-secondary">
@@ -30,27 +34,27 @@ const Portfolio = () => {
           </p>
         </div>
         <div className="row justify-content-center">
-          <ul class="nav nav-pills nav-fill col-lg-6">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">
+          <ul className="nav nav-pills nav-fill col-lg-4 col-md-7 col-sm-9 col-11">
+            <li className="nav-item">
+              <a className="nav-link active" aria-current="page" href="#">
                 All
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
+            <li className="nav-item">
+              <a className="nav-link" href="#">
                 Web pages
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
+            <li className="nav-item">
+              <a className="nav-link" href="#">
                 Desktop app
               </a>
             </li>
-            <li class="nav-item">
+            <li className="nav-item">
               <a
-                class="nav-link disabled"
+                className="nav-link disabled"
                 href="#"
-                tabindex="-1"
+                tabIndex="-1"
                 aria-disabled="true"
               >
                 Moblie app
@@ -58,7 +62,7 @@ const Portfolio = () => {
             </li>
           </ul>
         </div>
-        <div className="my-5">
+        <div className="my-3">
           <div className="row justify-content-center mx-sm-0 mx-2">
             {projects.map((e) => (
               <article

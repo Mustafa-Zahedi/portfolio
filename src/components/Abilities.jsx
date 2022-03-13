@@ -3,8 +3,7 @@ import { Icon } from "@iconify/react";
 
 const Abilities = () => {
   return (
-    <section className="mt-1 mb-5 pb-5 min-vh-100 abilitiesFront">
-      <div className=" "></div>
+    <section className="mt-md-5 mt-5 mb-5 pb-5 min-vh-100 abilitiesFront">
       <div className="container">
         <div className="d-flex align-items-center p-md-4 p-sm-3 p-2 pe-0 row">
           <div className="col-lg-5 col-md-9 col-sm-12 py-sm-5">
@@ -62,13 +61,6 @@ const Abilities = () => {
                 </p>
               </div>
             </div>
-          </div>
-          <div className="col-lg-7 col-md-12">
-            {/* <img
-              src="./depositphotos.jpg"
-              alt="keyboard"
-              className="img-fluid"
-            /> */}
           </div>
         </div>
       </div>

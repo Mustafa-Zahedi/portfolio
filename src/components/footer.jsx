@@ -13,7 +13,7 @@ function Footer() {
             target="_blank"
             className="m-2"
           >
-            <Icon icon="fa-brands:github-square" color="gray" height="40px" />
+            <Icon icon="fa-brands:github-square" color="gray" height="42px" />
           </a>
           <a
             href="https://www.linkedin.com/in/mustafa-zahedi-17870020b/"
