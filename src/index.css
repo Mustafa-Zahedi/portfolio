@@ -58,11 +58,17 @@ code {
   background: #0eb5df;
   box-shadow: 0 0 5px #0eb5df, 0 0 25px #0eb5df, 0 0 50px #0eb5df;
 }
+.pQheight {
+  height: 300px;
+}
 .quoteHeight {
-  height: 245px;
+  height: 270px !important;
+}
+.footerHeight {
+  height: 30px !important;
 }
 
-.moveAnimation::first-letter {
+.quoteSign::first-letter {
   top: -0.75rem;
   left: 0;
   margin-right: 5px;
@@ -71,31 +77,6 @@ code {
   font-size: 4rem;
   font-weight: normal;
   line-height: 1;
-}
-.moveAnimation {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: ease-out;
-  animation-duration: 1.5s;
-  transition: 0.1s linear;
-}
-
-@-webkit-keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
 }
 
 .abilitiesFront {

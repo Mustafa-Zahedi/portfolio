@@ -3,14 +3,23 @@ import { Icon } from "@iconify/react";
 
 let index = 2;
 let reIndex = 0;
-
+let imgSrc = "./profile.png";
+let qName = "Tomas";
 function Quote(props) {
   const [quotes, setQuotes] = useState("");
   const q = [
-    " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe provident fugit blanditiis eveniet expedita enim rerum quos cumque nece.",
-    "amet consectetur adipisicing elit. Saepe provident fugit blanditiis eveniet expedita enim rerum quos cumque necessitatibus minus.amet consectetur adipisicing rerum quos necessitatibus minus.amet consectetur adipisicing elit",
-    "adipisicing elit. Saepe provident fugit blanditiis eveniet expedita enim rerum quos cumque necessitatibus minus.amet consectetur adipisicing elit. Saepe provident",
-    " fugit blanditiis eveniet expedita enim rerum quos cumque necessitatibus minus.",
+    [
+      " Loremnditiis eveniet expedita enim rerum quos cumque nece.",
+      "./profile.png",
+      "Tom Shelbi",
+    ],
+    [
+      "amet conet consectetur adipisicing rerum quos necessitatibus minus.amet consectetur adipisicing elit",
+    ],
+    [
+      "adip elit. Saepe provident",
+      " fugit blanditiis eveniet expedita enim rerum quos cumque necessitatibus minus.",
+    ],
   ];
 
   useEffect(() => {
@@ -21,13 +30,17 @@ function Quote(props) {
   const handleClick = (e) => {
     let temp = [...q];
     if (e === "next" && temp[index]) {
-      let a = temp[index];
+      let a = temp[index][0];
+      imgSrc = temp[index][1];
+      qName = temp[index][2];
       reIndex = index - 1;
       index++;
       setQuotes({ a });
     }
     if (e === "prev" && temp[reIndex]) {
-      let a = temp[reIndex];
+      let a = temp[reIndex][0];
+      imgSrc = temp[reIndex][1];
+      qName = temp[reIndex][2];
       index = reIndex + 1;
       reIndex--;
       setQuotes({ a });
@@ -42,14 +55,24 @@ function Quote(props) {
     <section className="quote min-vh-70">
       <div className="container-lg container-fluid-md py-4">
         <div className="row my-5 pt-5 justify-content-center">
-          <div className="row col-md-6 col-sm-12 my-3 py-1">
-            <q className="col-12 p-lg-4 p-md-1 text-muted text-start quoteHeight fs-6 moveAnimation">
-              <q>{quotes["a"]}</q> <br />
-              <br />
-              <q>{q[0]}</q>
-            </q>
-            <div className="col-12 align-self-end">
-              <div className="text-right">
+          <div className="row col-md-6 col-sm-12 my-3 py-1 text-start">
+            <div className="pQheight">
+              <q className="quoteHeight text-muted text-start fs-6">
+                <q className="quoteSign">{quotes["a"]}</q> <br />
+                <br />
+                <q>{q[0][0]}</q>
+              </q>
+              <footer className="footerHeight">
+                <img
+                  src={imgSrc}
+                  style={{ width: "42px", borderRadius: "100px" }}
+                  alt="profile.png"
+                />
+                <h6>{qName}</h6>
+              </footer>
+            </div>
+            <div className="col-12 align-self-end text-end">
+              <div className="">
                 <a
                   className="btn btn-outline-info me-1 rounded-pill "
                   onClick={() => handleClick("prev")}
