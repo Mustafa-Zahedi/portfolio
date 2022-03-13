@@ -23,7 +23,6 @@ const Portfolio = () => {
     ]);
   }, []);
 
-  console.log(projects);
   return (
     <section className="container-fluid-lg container-fluid-md container-fluid-sm completePage portfolio my-5">
       <div className="my-5 px-3 text-center">
