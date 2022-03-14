@@ -6,9 +6,10 @@ const Portfolio = () => {
   useEffect(() => {
     setProjects([
       {
-        name: "Netflix",
-        src: "./logo192.png",
-        explain: ` Some quick example text to build on the card title `,
+        name: "Youtube Clone",
+        src: "./youtube.jpg",
+        link: "https://youtube-clone-liart.vercel.app",
+        explain: `A basic simple of youtube`,
       },
       {
         name: "Google",
@@ -18,7 +19,7 @@ const Portfolio = () => {
       {
         name: "Amazon",
         src: "./logo192.png",
-        explain: ` Some quick example text to build on the card title `,
+        explain: ` Some quick example build on the card title `,
       },
     ]);
   }, []);
@@ -72,7 +73,11 @@ const Portfolio = () => {
                 <div className="card-body">
                   <h5 className="card-title">{e.name}</h5>
                   <p className="card-text">{e.explain}</p>
-                  <a href="#" className="btn btnS btnS3 btn-info">
+                  <a
+                    href={e["link"]}
+                    target="_blank"
+                    className="btn btnS btnS3 btn-info"
+                  >
                     Go to page
                   </a>
                 </div>
