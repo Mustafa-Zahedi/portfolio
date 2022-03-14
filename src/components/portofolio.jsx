@@ -6,20 +6,20 @@ const Portfolio = () => {
   useEffect(() => {
     setProjects([
       {
-        name: "Youtube Clone",
+        name: "Youtube clone",
         src: "./youtube.jpg",
         link: "https://youtube-clone-liart.vercel.app",
-        explain: `A basic simple of youtube`,
+        explain: `A basic simple of an popular and most visited website`,
       },
       {
-        name: "Google",
-        src: "./logo192.png",
-        explain: ` Some quick example text to build on the card title `,
+        name: "Telegram Clone",
+        src: "./telegram.png",
+        explain: `Coming soon...`,
       },
       {
-        name: "Amazon",
-        src: "./logo192.png",
-        explain: ` Some quick example build on the card title `,
+        name: "Lichess clone",
+        src: "./lichess.png",
+        explain: `Under work...`,
       },
     ]);
   }, []);
