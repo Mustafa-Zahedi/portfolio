@@ -9,7 +9,7 @@ const Portfolio = () => {
         name: "Youtube clone",
         src: "./youtube.jpg",
         link: "https://youtube-clone-liart.vercel.app",
-        explain: `A basic simple of an popular and most visited website`,
+        explain: `A basic simple of a popular and most visited website`,
       },
       {
         name: "Telegram Clone",
