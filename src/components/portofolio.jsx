@@ -12,6 +12,14 @@ const Portfolio = () => {
       explain: `A basic simple of a popular and most visited website`,
     },
     {
+      name: "messenger clone",
+      src: "./messenger.jpg",
+      type: "web",
+      link: "https://chat-messenger-psi.vercel.app/chats",
+      explain:
+        "it is also a basic simple of messenger you can send and recive messeges.",
+    },
+    {
       name: "Telegram clone",
       src: "./telegram.png",
       type: "web",
