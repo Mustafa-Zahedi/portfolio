@@ -56,9 +56,10 @@ function Quote(props) {
       <div className="container-lg container-fluid-md py-4">
         <div className="row my-5 pt-5 justify-content-center">
           <div className="row col-md-6 col-sm-12 my-3 py-1 text-start">
-            <div className="pQheight">
+            <div className="pQheight ">
+              <div className="quoteSign"></div>
               <q className="quoteHeight text-muted text-start fs-6">
-                <q className="quoteSign">{quotes["a"]}</q> <br />
+                <q className="">{quotes["a"]}</q> <br />
                 <br />
                 <q>{q[0][0]}</q>
               </q>
