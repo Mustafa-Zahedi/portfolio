@@ -15,7 +15,6 @@ function App() {
       <Index />
       <Abilities />
       <Portfolio />
-      // <Quote />
       <Footer />
     </main>
   );
