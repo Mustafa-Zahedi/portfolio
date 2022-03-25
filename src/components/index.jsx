@@ -8,10 +8,10 @@ const Index = () => {
   };
 
   return (
-    <section className="container mt-5 mb-md-1 pt-5 min-vh-100">
-      <div>
-        <div className="align-items-center d-flex row justify-content-center">
-          <div className="justify-content-center col-lg-5 col-md-12 mb-5">
+    <section className="container d-flex min-vh-100 align-items-center">
+      <div className="my-5">
+        <div className="d-flex row justify-content-center">
+          <div className="col-lg-5 col-md-12 mb-5">
             <h1>Hey, I'm Mostapha</h1>
             <h2 className="text-secondary">Programmer & Web Developer</h2>
             <button className="btn btn-outline-info mt-5 mx-3">

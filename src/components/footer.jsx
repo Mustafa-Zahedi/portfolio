@@ -11,16 +11,20 @@ function Footer() {
           <a
             href="https://github.com/Mustafa-Zahedi/"
             target="_blank"
-            className="m-2"
+            className="btn m-2"
           >
             <Icon icon="fa-brands:github-square" color="gray" height="42px" />
+            <br />
+            <span>Github</span>
           </a>
           <a
             href="https://www.linkedin.com/in/mustafa-zahedi-17870020b/"
             target="_blank"
-            className="m-2"
+            className="btn m-2"
           >
             <Icon icon="logos:linkedin-icon" height="40px" />
+            <br />
+            <span>Linkedin</span>
           </a>
         </div>
         <div className="my-3 pb-2">

@@ -12,12 +12,12 @@ const Portfolio = () => {
       explain: `A basic simple of a popular and most visited website`,
     },
     {
-      name: "messenger clone",
+      name: "Messenger clone",
       src: "./messenger.jpg",
       type: "web",
       link: "https://chat-messenger-psi.vercel.app/chats",
       explain:
-        "it is also a basic simple of messenger you can send and recive messeges.",
+        "It is a basic simple of messenger that you can send and recive messege by it.",
     },
     {
       name: "Telegram clone",
@@ -40,7 +40,6 @@ const Portfolio = () => {
 
   const onClickTab = (type) => {
     const temp = allProject;
-    console.log(type, temp);
     let result = "";
     if (type === "") result = temp;
     else {
@@ -100,11 +99,11 @@ const Portfolio = () => {
           </ul>
         </div>
         <div className="py-3">
-          <div className="row justify-content-center mx-sm-0 mx-2">
+          <div className="row justify-content-center mx-sm-0 mx-md-2">
             {projects.map((e) => (
               <article
                 key={e.name}
-                className="card col-lg-3 col-md-5 col-sm-5  m-lg-3 mx-md-3 m-sm-3 m-1 mb-sm-2 mb-3 "
+                className="card col-lg-3 col-md-5 col-sm-6 col-6  m-lg-3 m-md-3 m-sm-2 m-1"
               >
                 <div className="cardImg">
                   <img
