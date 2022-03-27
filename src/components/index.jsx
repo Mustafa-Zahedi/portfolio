@@ -14,9 +14,13 @@ const Index = () => {
           <div className="col-lg-5 col-md-12 mb-5">
             <h1>Hey, I'm Mostapha</h1>
             <h2 className="text-secondary">Programmer & Web Developer</h2>
-            <button className="btn btn-outline-info mt-5 mx-3">
+            <a
+              className="btn btn-outline-info mt-5 mx-3"
+              download
+              href="/Profile.pdf"
+            >
               <Icon icon="akar-icons:cloud-download" /> Download CV
-            </button>
+            </a>
             <button
               className="btn btn-outline-info mt-5"
               onClick={goToPortfolio}
