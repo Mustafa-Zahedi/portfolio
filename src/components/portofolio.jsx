@@ -9,7 +9,7 @@ const Portfolio = () => {
       src: "./youtube.jpg",
       type: "desktop",
       link: "https://youtube-clone-liart.vercel.app",
-      explain: `A basic simple of a popular and most visited website`,
+      explain: `A basic sample of a popular and most visited website`,
     },
     {
       name: "Messenger clone",
@@ -17,7 +17,7 @@ const Portfolio = () => {
       type: "web",
       link: "https://chat-messenger-psi.vercel.app/chats",
       explain:
-        "It is a basic simple of messenger that you can send and recive messege by it.",
+        "It is a basic sample of messenger that you can send and recive messege by it.",
     },
     {
       name: "Telegram clone",
