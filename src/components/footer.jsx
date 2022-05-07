@@ -4,7 +4,6 @@ import { Icon } from "@iconify/react";
 function Footer() {
   return (
     <section className="container-fluid frontFooter">
-      <div className=""></div>
       <div className="content">
         <div className="py-5">
           <h2>Follow me</h2>
