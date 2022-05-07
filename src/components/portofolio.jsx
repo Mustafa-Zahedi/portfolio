@@ -20,11 +20,11 @@ const Portfolio = () => {
         "It is a basic sample of messenger that you can send and recive messege by it.",
     },
     {
-      name: "Telegram clone",
-      src: "./telegram.png",
+      name: "Book store",
+      src: "./book.png",
       type: "web",
-
-      explain: `Coming soon...`,
+      link: "https://kateb-book-store.vercel.app",
+      explain: `This is an instance of online book store.`,
     },
     {
       name: "Lichess clone",
