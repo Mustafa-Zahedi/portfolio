@@ -6,7 +6,7 @@ const Portfolio = () => {
   const allProject = [
         {
       name: "Crypto currency",
-      src: "./bitcoin.jpg",
+      src: "./bitcoin.2b7d6815.svg",
       type: "web",
       link: "https://didi-bank.vercel.app",
       explain: `A beautiful web page for tracking crypto currency.`,
