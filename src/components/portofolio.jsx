@@ -5,18 +5,18 @@ const Portfolio = () => {
 
   const allProject = [
      {
-      name: "Sleeman",
+      name: "Crypto currency",
       src: "./bitcoin.2b7d6815.svg",
       type: "web",
       link: "https://didi-bank.vercel.app",
       explain: `A beautiful web page for tracking crypto currency.`,
     },
         {
-      name: "Crypto currency",
+      name: "Sleeman",
       src: "./logo.png",
       type: "web",
       link: "https://sleeman-zahedi.vercel.app",
-      explain: `A funny web application which I done for a canadian client.`,
+      explain: `A funny web application which I done for a canadian client and shared here by his permission.`,
     },
     {
       name: "Youtube clone",
