@@ -4,12 +4,19 @@ const Portfolio = () => {
   const [projects, setProjects] = useState([]);
 
   const allProject = [
-        {
-      name: "Crypto currency",
+     {
+      name: "Sleeman",
       src: "./bitcoin.2b7d6815.svg",
       type: "web",
       link: "https://didi-bank.vercel.app",
       explain: `A beautiful web page for tracking crypto currency.`,
+    },
+        {
+      name: "Crypto currency",
+      src: "./logo.png",
+      type: "web",
+      link: "https://sleeman-zahedi.vercel.app",
+      explain: `A funny web application which I done for a canadian client.`,
     },
     {
       name: "Youtube clone",
